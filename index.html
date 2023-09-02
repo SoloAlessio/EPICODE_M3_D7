@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- GOOGLE Links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="icon" href="assets/imgs/Netflix_mini_logo.png">
+
+    <title>TV Shows - Netflix</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top mb-3">
+        <a class="navbar-brand" href="#">
+            <img src="assets/imgs/Netflix_Logo_RGB.png" height="45" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#shows">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#movies">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#recent">Recently Added</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#list">My List</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto text-light align-items-center">
+                <i class="bi bi-search mx-2 my-auto"></i>
+                <span class="mx-2 my-auto" id="kids">KIDS</span>
+                <i class="bi bi-bell-fill mx-2 my-auto"></i>
+                <li class="nav-item ml-2 dropdown">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-image">
+                            <img src="assets/imgs/propic.png" alt="Dropdown" class="img-fluid rounded mr-1">
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right bg-dark mt-3" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-light" href="#">Profile</a>
+                        <a class="dropdown-item text-light" href="#">La Mia Lista</a>
+                        <a class="dropdown-item text-light" href="#">Impostazioni</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="d-flex justify-content-between bg-dark text-light mb-4">
+        <div class="d-flex w-100">
+            <h2 class="mr-5 font-weight-bold">TV Shows</h2>
+            <div class="dropdown" id="genre">
+                <button class="btn bg-dark border-light dropdown-toggle text-light" type="button" data-toggle="dropdown"
+                    aria-expanded="false">
+                    Genres
+                </button>
+                <div class="dropdown-menu bg-dark">
+                    <a class="dropdown-item text-light px-3" href="#">Adolescienziali</a>
+                    <a class="dropdown-item text-light px-3" href="#">Anime</a>
+                    <a class="dropdown-item text-light px-3" href="#">Animazione</a>
+                    <a class="dropdown-item text-light px-3" href="#">Bambini</a>
+                    <a class="dropdown-item text-light px-3" href="#">Brittanici</a>
+                    <a class="dropdown-item text-light px-3" href="#">Commedie</a>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center" id="bottoni">
+            <button class="btn button-primary border text-light py-1 px-3 rounded-0">
+                <i class="bi bi-justify-left"></i>
+            </button>
+            <button class="btn button-primary border text-light py-1 px-3 rounded-0">
+                <i class="bi bi-grid"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="bg-dark text-light">
+        <section class="movie-row mb-5">
+            <h3 class="mb-3 font-weight-bold">Trending now</h3>
+            <div class="row no-gutters flex-nowrap">
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/1.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/2.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/3.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/4.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/5.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/6.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/7.png" alt="">
+                    <div class="movie-shadow"></div>
+                </div>
+        </section>
+        <section class="movie-row mb-5">
+            <h3 class="mb-3 font-weight-bold">Watch it Again</h3>
+            <div class="row no-gutters flex-nowrap">
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/8.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/9.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/10.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/11.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/12.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/13.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/14.png" alt="">
+                    <div class="movie-shadow"></div>
+                </div>
+        </section>
+        <section class="movie-row mb-5">
+            <h3 class="mb-3 font-weight-bold">New Releases</h3>
+            <div class="row no-gutters flex-nowrap">
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/15.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/16.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/17.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/7.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/14.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/18.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/4.png" alt="">
+                    <div class="movie-shadow"></div>
+                </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
