@@ -66,7 +66,7 @@ section h3{
 /* CAROSELLO */
 
 .carousel-item{
-    z-index: 1;
+    z-index: 1; /* imposta il livello del carosello su 1 che poi sarà modificato on l'hover */
 }
 
 .carousel-inner{
@@ -75,14 +75,12 @@ section h3{
 
 .movie-row img { /* proprietà immagini movie-card */
     width: 100%;
-    position: relative;
     border-radius: 4px;
     cursor: pointer;
 }
 
 .movie-row .movie-card{ /* proprietà movie-card */
     transition: all .2s ease;
-    transform: scale(1);
     z-index: 100;
 }
 
@@ -110,8 +108,8 @@ section h3{
     fill: #fff;
 }
 
-.carousel-item:hover{ /* con il passaggio del mouse passa sopra il carosello */
-    z-index: 2;
+.carousel-item:hover{
+    z-index: 2; /* con il passaggio del mouse imposta un livello superiore agli altri due caroselli */
 }
 
 .carousel-item .movie-card:hover .card-body{ /* al passaggio del mouse mostra il body-card */
@@ -127,15 +125,15 @@ section h3{
 }
 
 .movie-row .movie-card:hover .card-body{
-    transition-delay: .5s;
+    transition-delay: .5s; /* Imposta il delay solo in entrata e non in uscita */
 }
 
 .movie-row .movie-card:first-of-type:hover{
-    transform: scale(1.3) translateY(-50px) translateX(30%);
+    transform: scale(1.3) translateY(-50px) translateX(30%); /* sposta le movie-card per evitare il conflitto con le frecce del carosello */
 }
 
 .movie-row .movie-card:last-of-type:hover{
-    transform: scale(1.3) translateY(-50px) translateX(-30%);
+    transform: scale(1.3) translateY(-50px) translateX(-30%); /* sposta le movie-card per evitare il conflitto con le frecce del carosello */
 }
 
 /* PREV/NEXT CAROUSEL BUTTONS */
@@ -145,14 +143,14 @@ section h3{
     position: absolute;
     top: 0;
     right: 0;
-    background-image: linear-gradient(-90deg, #141414, transparent);
+    background-image: linear-gradient(-90deg, #141414, transparent); /* imposta un gradiente sull'ultima movie-card della fila per dare un effetto di continuità con le altre righe del carosello */
     width: 50%;
     height: 100%;
 }
 
 .carousel button{
-    width: 5% !important;
-    z-index: 2;
+    width: 5% !important; /* riduce la larghezza delle frecce default di bootstrap */
+    z-index: 2; /* posiziona le frecce sopra le movie-card */
 }
 
 /* FOOTER */
